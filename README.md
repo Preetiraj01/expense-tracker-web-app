@@ -38,12 +38,6 @@ This project helps users:
 
 ---
 
-## ℹ️ About Page
-
-![About](screenshots/about.png)
-
----
-
 # ✨ Features
 
 - 💰 Real-time Balance Calculation
