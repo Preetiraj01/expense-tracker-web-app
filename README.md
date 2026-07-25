@@ -1,100 +1,134 @@
 # 💰 Expense Tracker Web Application
 
-A modern and responsive **Expense Tracker Web Application** built using **HTML, CSS, and JavaScript**. This application helps users manage their daily income and expenses with an intuitive dashboard, interactive charts, and transaction management features.
+A modern and responsive **Expense Tracker Web Application** built using **HTML, CSS, JavaScript, and Chart.js**. The application enables users to efficiently manage their income and expenses through an interactive dashboard, transaction management system, and insightful visualizations.
 
 ---
 
-## 📸 Project Preview
+## 📌 Overview
 
-> *(Add screenshots of your Dashboard, Add Transaction, History, and About pages here.)*
+This project helps users:
 
-Example:
-
-- Dashboard
-- Add Transaction
-- Transaction History
-- About Page
+- Track income and expenses
+- Monitor account balance
+- Analyze monthly savings
+- Visualize expenses using charts
+- Search, filter, and sort transactions
+- Download transaction history as CSV
+- Switch between Light and Dark Mode
 
 ---
 
-## ✨ Features
+# 📸 Project Screenshots
 
-- 📊 Dashboard with Balance Summary
-- 💵 Track Income & Expenses
+## 🏠 Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## ➕ Add Transaction
+
+![Add Transaction](screenshots/add.png)
+
+---
+
+## 📜 Transaction History
+
+![History](screenshots/history.png)
+
+---
+
+## ℹ️ About Page
+
+![About](screenshots/about.png)
+
+---
+
+# ✨ Features
+
+- 💰 Real-time Balance Calculation
+- 📈 Income & Expense Summary
 - 📅 Monthly Income, Expense & Savings
 - ➕ Add New Transactions
 - 📜 Transaction History
 - 🔍 Search Transactions
-- 🗂 Filter by Category & Type
+- 🗂 Filter by Category
+- 🔄 Filter by Transaction Type
 - ↕ Sort Transactions
-- 🥧 Expense Category Pie Chart (Chart.js)
-- 🌙 Dark / Light Mode
-- 📥 Download Transactions as CSV
-- 📱 Responsive Design
+- 🥧 Expense Category Pie Chart
+- 🌙 Dark / Light Theme
+- 📥 Export Transactions as CSV
+- 📱 Responsive User Interface
 
 ---
 
-## 🛠 Tech Stack
+# 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Chart.js
-- Local Storage API
+| Technology | Purpose |
+|------------|---------|
+| HTML5 | Structure |
+| CSS3 | Styling |
+| JavaScript (ES6) | Functionality |
+| Chart.js | Data Visualization |
+| Local Storage | Data Persistence |
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 expense-tracker-web-app/
 │
-├── index.html          # Dashboard
-├── add.html            # Add Transaction
-├── history.html        # Transaction History
-├── about.html          # About Project
+├── index.html
+├── add.html
+├── history.html
+├── about.html
 │
-├── style.css           # Styling
-├── script.js           # Application Logic
+├── style.css
+├── script.js
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── add.png
+│   ├── history.png
+│   └── about.png
 │
 └── README.md
 ```
 
 ---
 
-## 🚀 How to Run
+# 🚀 Getting Started
 
-1. Clone the repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/Preetiraj01/expense-tracker-web-app.git
 ```
 
-2. Open the project folder
+### Open the Project
 
 ```bash
 cd expense-tracker-web-app
 ```
 
-3. Open `index.html` in your browser.
-
-No additional installation is required.
+Open **index.html** in your preferred web browser.
 
 ---
 
-## 📊 Dashboard
+# 📊 Dashboard
 
-The dashboard displays:
+The dashboard provides an overview of:
 
 - Current Balance
 - Total Income
-- Total Expense
+- Total Expenses
 - Monthly Statistics
-- Expense Category Pie Chart
+- Expense Distribution Chart
 
 ---
 
-## 📜 Transaction Management
+# 📜 Transaction Management
 
 Users can:
 
@@ -105,22 +139,23 @@ Users can:
 - Filter by Category
 - Filter by Type
 - Sort Transactions
-- Download History as CSV
+- Download CSV Report
 
 ---
 
-## 💡 Future Improvements
+# 💡 Future Enhancements
 
 - 🔐 User Authentication
-- ☁ Database Integration
-- 📄 Export Reports as PDF
-- 🎯 Budget Goal Tracking
+- ☁️ Database Integration
+- 📄 PDF Report Export
+- 🎯 Budget Goal Tracker
 - 🔔 Budget Notifications
-- 📈 Monthly Trend Charts
+- 📈 Monthly Expense Trend Graph
+- 💳 Multiple Account Support
 
 ---
 
-## 👩‍💻 Developer
+# 👩‍💻 Developer
 
 **Preeti Raj**
 
@@ -128,18 +163,18 @@ B.Tech – Computer Science & Engineering
 
 Sir M. Visvesvaraya Institute of Technology
 
-GitHub: https://github.com/Preetiraj01
+GitHub: **https://github.com/Preetiraj01**
 
 ---
 
-## ⭐ If you like this project
+# ⭐ Support
 
-Please consider giving it a ⭐ on GitHub.
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
 
-It motivates me to build more amazing projects.
+It motivates me to build more projects!
 
 ---
 
-## 📄 License
+# 📄 License
 
-This project is developed for educational and learning purposes.
+This project is created for **educational and learning purposes**.
