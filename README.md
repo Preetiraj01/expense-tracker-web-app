@@ -28,13 +28,13 @@ This project helps users:
 
 ## ➕ Add Transaction
 
-![Add Transaction](screenshots/add.png)
+![Add Transaction](screenshots/add_transaction.png)
 
 ---
 
 ## 📜 Transaction History
 
-![History](screenshots/history.png)
+![History](screenshots/transaction_history.png)
 
 ---
 
