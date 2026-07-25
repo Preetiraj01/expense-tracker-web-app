@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Transaction</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+   <!-- HEADER -->
+
+<div class="header">
+
+    <div class="header-left">
+
+        <div class="logo">
+            <h1>Expense Tracker</h1>
+        </div>
+
+       <nav class="navbar">
+    <a href="index.html">Dashboard</a>
+    <a href="add.html" class="active">Add Transaction</a>
+    <a href="history.html">History</a>
+    <a href="about.html">About</a>
+</nav>
+
+    </div>
+
+    <button id="theme-toggle">🌙</button>
+
+</div>
+
+    <!-- Add Transaction Card -->
+
+    <div class="transaction-form">
+
+        <h2>Add Transaction</h2>
+
+        <form id="expense-form">
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Enter Title"
+                required
+            >
+
+            <input
+                type="number"
+                id="amount"
+                placeholder="Enter Amount"
+                required
+            >
+
+            <select id="category">
+                <option value="Food">Food</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Travel">Travel</option>
+                <option value="Salary">Salary</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="type">
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+
+            <button type="submit">
+                Add Transaction
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

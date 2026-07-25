@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- HEADER -->
+
+<div class="header">
+
+    <div class="header-left">
+
+        <div class="logo">
+            <h1>Expense Tracker</h1>
+        </div>
+
+        <nav class="navbar">
+    <a href="index.html">Dashboard</a>
+    <a href="add.html">Add Transaction</a>
+    <a href="history.html" class="active">History</a>
+    <a href="about.html">About</a>
+</nav>
+
+    </div>
+
+    <button id="theme-toggle">🌙</button>
+
+</div>
+
+    <!-- Transaction History -->
+
+    <div class="history">
+
+        <h2>Transaction History</h2>
+
+        <div class="history-controls">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search transaction..."
+            >
+
+            <select id="filter-category">
+                <option value="All">All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Travel">Travel</option>
+                <option value="Salary">Salary</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <select id="filter-type">
+                <option value="All">All Types</option>
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+
+            <select id="sort-transactions">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+                <option value="high">Amount: High → Low</option>
+                <option value="low">Amount: Low → High</option>
+            </select>
+
+            <button id="download-csv">
+                Download CSV
+            </button>
+
+        </div>
+
+        <ul id="transaction-list"></ul>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

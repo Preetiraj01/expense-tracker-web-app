@@ -1,0 +1,746 @@
+/* ===================================================
+   EXPENSE TRACKER
+   STYLE.CSS
+   PART 1
+=================================================== */
+
+/* ---------- RESET ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#222;
+}
+
+.container{
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:15px 0;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+
+.header-left{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.logo h1{
+    font-size:42px;
+    color:#2d3436;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.navbar{
+    display:flex;
+    gap:30px;
+}
+
+.navbar a{
+
+    text-decoration:none;
+    color:#444;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#4CAF50;
+
+}
+
+.navbar a.active{
+
+    color:#4CAF50;
+
+}
+
+
+/* ---------- THEME BUTTON ---------- */
+
+#theme-toggle{
+
+    width:55px;
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#222;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
+
+#theme-toggle:hover{
+
+    background:#444;
+
+}
+
+
+/* ---------- BALANCE CARD ---------- */
+
+.balance-card{
+
+    width:420px;
+
+    margin:0 auto 20px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.balance-card h2{
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.balance-card h1{
+
+    font-size:40px;
+
+}
+
+
+/* ---------- SUMMARY ---------- */
+
+.summary{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* ---------- INCOME CARD ---------- */
+
+.income-box{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.income-box h3{
+
+    color:#4CAF50;
+
+    font-size:28px;
+
+}
+
+.income-box p{
+
+    margin-top:12px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+
+/* ---------- EXPENSE CARD ---------- */
+
+.expense-box{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.expense-box h3{
+
+    color:#E53935;
+
+    font-size:28px;
+
+}
+
+.expense-box p{
+
+    margin-top:12px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+
+/* ---------- MAIN DASHBOARD ---------- */
+
+.main-content{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:20px;
+
+}
+
+.left-column,
+.right-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+/* ===================================================
+   DASHBOARD CARDS
+=================================================== */
+
+/* ---------- MONTHLY STATS ---------- */
+
+.monthly-stats{
+    background:white;
+    border-radius:18px;
+    padding:18px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.monthly-stats h2{
+    text-align:center;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.month-container{
+    display:flex;
+}
+
+.month-box{
+    flex:1;
+    text-align:center;
+    padding:15px;
+}
+
+.month-box:not(:last-child){
+    border-right:2px solid #eee;
+}
+
+.month-box h3{
+    font-size:22px;
+    margin-bottom:12px;
+    color:#555;
+}
+
+.month-box p{
+    font-size:24px;
+    font-weight:bold;
+}
+
+
+
+/* ---------- PIE CHART ---------- */
+
+.chart-container{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.chart-container h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.chart-container canvas{
+
+    max-height:250px;
+
+}
+
+
+
+/* ===================================================
+   ADD TRANSACTION PAGE
+=================================================== */
+
+.transaction-form{
+
+    width:700px;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.transaction-form h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+
+}
+
+
+
+/* ---------- FORM ---------- */
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+input,
+select{
+
+    padding:15px;
+
+    font-size:17px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+
+}
+
+input:focus,
+select:focus{
+
+    border:2px solid #4CAF50;
+
+}
+
+
+
+/* ---------- BUTTON ---------- */
+
+button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#388E3C;
+
+}
+
+
+
+/* ===================================================
+   HISTORY PAGE
+=================================================== */
+
+.history{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+
+}
+
+.history h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    font-size:30px;
+
+}
+
+
+
+/* ---------- SEARCH + FILTER ---------- */
+
+.history-controls{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:25px;
+
+}
+
+.history-controls input{
+
+    flex:2;
+
+}
+
+.history-controls select{
+
+    flex:1;
+
+}
+
+#download-csv{
+
+    background:#1976D2;
+
+}
+
+#download-csv:hover{
+
+    background:#0D47A1;
+
+}
+/* ===================================================
+   TRANSACTION LIST
+=================================================== */
+
+#transaction-list{
+    list-style:none;
+    margin-top:20px;
+}
+
+.transaction-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f8f9fa;
+    border-radius:12px;
+    padding:15px 20px;
+    margin-bottom:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.transaction-item:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.15);
+}
+
+.transaction-item.income{
+    border-left:6px solid #4CAF50;
+}
+
+.transaction-item.expense{
+    border-left:6px solid #F44336;
+}
+
+.transaction-item strong{
+    font-size:18px;
+}
+
+.transaction-item small{
+    color:#666;
+}
+
+.delete-btn{
+    background:#F44336;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+    background:#D32F2F;
+}
+
+/* ===================================================
+   EMPTY MESSAGE
+=================================================== */
+
+.empty-message{
+    text-align:center;
+    color:#888;
+    font-style:italic;
+    padding:25px;
+}
+
+/* ===================================================
+   ABOUT PAGE
+=================================================== */
+
+.about-card{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 8px 18px rgba(0,0,0,.12);
+}
+
+.about-card h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.about-card p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.about-card ul{
+    margin-top:20px;
+    padding-left:20px;
+}
+
+.about-card li{
+    margin-bottom:12px;
+    font-size:18px;
+}
+
+/* ===================================================
+   DARK MODE
+=================================================== */
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .logo h1{
+    color:white;
+}
+
+.dark-mode .navbar a{
+    color:#ddd;
+}
+
+.dark-mode .navbar a.active{
+    color:#4CAF50;
+}
+
+.dark-mode .income-box,
+.dark-mode .expense-box,
+.dark-mode .balance-card,
+.dark-mode .monthly-stats,
+.dark-mode .chart-container,
+.dark-mode .transaction-form,
+.dark-mode .history,
+.dark-mode .about-card{
+    background:#1E1E1E;
+    color:white;
+}
+
+.dark-mode input,
+.dark-mode select{
+    background:#2C2C2C;
+    color:white;
+    border:1px solid #555;
+}
+
+.dark-mode .transaction-item{
+    background:#2C2C2C;
+}
+
+.dark-mode .month-box:not(:last-child){
+    border-right:2px solid #444;
+}
+
+/* ===================================================
+   RESPONSIVE DESIGN
+=================================================== */
+
+@media(max-width:992px){
+
+    .header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .navbar{
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .balance-card{
+        width:100%;
+    }
+
+    .summary{
+        grid-template-columns:1fr;
+    }
+
+    .main-content{
+        grid-template-columns:1fr;
+    }
+
+    .transaction-form{
+        width:100%;
+    }
+
+    .history-controls{
+        flex-direction:column;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .logo h1{
+        font-size:36px;
+    }
+
+    .navbar a{
+        font-size:16px;
+    }
+
+    .balance-card h1{
+        font-size:36px;
+    }
+
+    .income-box p,
+    .expense-box p{
+        font-size:30px;
+    }
+
+    .month-box p{
+        font-size:24px;
+    }
+
+}
+/* ==========================
+   ABOUT PAGE
+========================== */
+
+.about-card{
+    width:75%;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+}
+
+.about-card h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+.about-card h3{
+    color:#4CAF50;
+    margin-bottom:10px;
+}
+
+.about-card p{
+    line-height:1.8;
+    font-size:18px;
+}
+
+.about-card ul{
+    padding-left:25px;
+}
+
+.about-card li{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.dark-mode .about-card{
+    background:#1E1E1E;
+    color:white;
+}

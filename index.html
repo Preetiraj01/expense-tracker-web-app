@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker - Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= HEADER ================= -->
+
+    <div class="header">
+
+        <div class="header-left">
+
+            <div class="logo">
+                <h1>Expense Tracker</h1>
+            </div>
+
+            <nav class="navbar">
+    <a href="index.html" class="active">Dashboard</a>
+    <a href="add.html">Add Transaction</a>
+    <a href="history.html">History</a>
+    <a href="about.html">About</a>
+</nav>
+
+        </div>
+
+        <button id="theme-toggle">🌙</button>
+
+    </div>
+
+    <!-- ================= BALANCE ================= -->
+
+    <div class="balance-card">
+        <h2>Your Balance</h2>
+        <h1 id="balance">₹0</h1>
+    </div>
+
+    <!-- ================= INCOME & EXPENSE ================= -->
+
+    <div class="summary">
+
+        <div class="income-box">
+            <h3>Income</h3>
+            <p id="income">₹0</p>
+        </div>
+
+        <div class="expense-box">
+            <h3>Expense</h3>
+            <p id="expense">₹0</p>
+        </div>
+
+    </div>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="main-content">
+
+        <!-- LEFT COLUMN -->
+
+        <div class="left-column">
+
+            <!-- Monthly Statistics -->
+
+            <div class="monthly-stats">
+
+                <h2>This Month</h2>
+
+                <div class="month-container">
+
+                    <div class="month-box">
+                        <h3>Income</h3>
+                        <p id="month-income">₹0</p>
+                    </div>
+
+                    <div class="month-box">
+                        <h3>Expense</h3>
+                        <p id="month-expense">₹0</p>
+                    </div>
+
+                    <div class="month-box">
+                        <h3>Savings</h3>
+                        <p id="month-savings">₹0</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN -->
+
+        <div class="right-column">
+
+            <!-- Pie Chart -->
+
+            <div class="chart-container">
+
+                <h2>Expense by Category</h2>
+
+                <canvas id="expenseChart"></canvas>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Chart JS -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- Your JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
